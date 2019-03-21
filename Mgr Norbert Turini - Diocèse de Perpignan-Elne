@@ -1,0 +1,57 @@
+def reverse_numeric(x, y):
+    return y - x
+sorted([5, 2, 4, 1, 3], cmp=reverse_numeric) # doctest: +SKIP
+[5, 4, 3, 2, 1]
+###In Py3.0, the cmp parameter was removed entirely (as part of a larger effort to simplify and unify the language,
+eliminating the conflict between rich comparisons and the __cmp__() magic method).
+
+data = [('red', 1), ('blue', 1), ('red', 2), ('blue', 2)]
+standard_way = sorted(data, key=itemgetter(0), reverse=True)
+double_reversed = list(reversed(sorted(reversed(data), key=itemgetter(0))))
+assert standard_way == double_reversed
+standard_way
+
+Student.__lt__ = lambda self, other: self.age < other.age
+sorted(student_objects)
+
+students = ['dave', 'john', 'jane']
+newgrades = {'john': 'F', 'jane':'A', 'dave': 'C'}
+sorted(students, key=newgrades.__getitem__)
+***************************************************
+try:
+    with open('/tmp/input.txt', 'r') as f:
+        
+except OSError:
+    # 'File not found' error message.
+    print("Fichier non trouvé")
+    
+u = chr(40960) + 'abcd' + chr(1972)
+u.encode('utf-8')
+
+u.encode('ascii', 'ignore')
+b'abcd'
+u.encode('ascii', 'replace')
+b'?abcd?'
+>>> u.encode('ascii', 'xmlcharrefreplace')
+b'&#40960;abcd&#1972;'
+>>> u.encode('ascii', 'backslashreplace')
+b'\\ua000abcd\\u07b4'
+>>> u.encode('ascii', 'namereplace')
+b'\\N{YI SYLLABLE IT}abcd\\u07b4'
+
+u.encode('ascii', 'xmlcharrefreplace')
+b'&#40960;abcd&#1972;'
+u.encode('ascii', 'backslashreplace')
+b'\\ua000abcd\\u07b4'
+u.encode('ascii', 'namereplace')
+b'\\N{YI SYLLABLE IT}abcd\\u07b4'
+
+#ELLES ONT DE PLUS EN PLUS BESOIN DE SECOURS DE L'EGLISE
+#LES GENS SONT PARFOIS JUGES
+#EST-CE QUE VOUS APPELEZ AUSSI LES CATHOLIQUES A SUBIR UNE CONVERSION?
+
+s = "a\xac\u1234\u20ac\U00008000"
+#     ^^^^ two-digit hex escape
+#         ^^^^^^ four-digit Unicode escape
+#                     ^^^^^^^^^^ eight-digit Unicode escape
+[ord(c) for c in s]

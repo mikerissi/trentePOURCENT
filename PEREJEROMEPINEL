@@ -1,0 +1,29 @@
+net4 = ipaddress.ip_network('192.0.2.0/24')
+net4.netmask
+
+net6 = ipaddress.ip_network('2001:db8::0/96')
+net6.netmask
+
+net6.hostmask
+#IPv6Address('::ffff:ffff')
+
+try:
+    network = ipaddress.IPv4Network(address)
+except ValueError:
+    print('address/netmask is invalid for IPv4:', 
+    
+try:
+    network = ipaddress.IPv4Network('192.0.2.1')
+except ValueError:
+    print('address/netmask is invalid for IPv4:', address)
+    
+cities = ["Paris", "Berlin", "Hamburg", "Frankfurt", "London", "Vienna", "Amsterdam", "Den Haag"]
+for location in cities:
+    print("location: " + location)
+    
+    posez a nouveau la question de
+    les editions critiques des textes
+    a l'annonce du jmj a 2007
+    a l'annonce de jp2 de son desir
+    elle nous a parle des caracteres 
+    

@@ -1,0 +1,38 @@
+lst = [42,98,77]
+lst2 = [8,69]
+lst.extend(lst2)
+lst
+
+lst = ["a", "b", "c"]
+programming_language = "Python"
+lst.extend(programming_language)
+print(lst)
+###il faut un cheminement de renouvellement de la personne
+
+lst5 = ["Java", "C", "PHP"]
+t = ("C#", "Jython", "Python", "IronPython")
+lst5.extend(t)
+lst
+
+level = ["beginner", "intermediate", "advanced"]
+other_words = ["novice", "expert"]
+level + other_words
+
+L = [3, 4]
+L += [42]
+L
+
+colours = ["red", "green", "blue", "green", "yellow"]
+colours.remove("green")
+colours
+['red', 'blue', 'green', 'yellow']
+colours.remove("green")
+colours
+#la vierge de fatima a des choses a nous raconter aujourdhui par moyen de bernadette
+
+«  “ Madame, voulez-vous avoir la bonté de me dire qui vous êtes  ? ”
+
+«  Hélas  ! sera-ce donc comme les autres fois  ? Un salut de tête, un sourire  ! Bernadette insiste. Une force intérieure l’oblige à répéter  :
+
+«  “ Ô Madame, voulez-vous avoir la bonté de me dire qui vous êtes  ? ”
+

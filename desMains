@@ -1,0 +1,15 @@
+city_population = {"New York City":8550405, "Los Angeles":3971883, "Toronto":2731571, "Chicago":2720546, 
+"Houston":2296224, "Montreal":1704694, "Calgary":1239220, "Vancouver":631486, "Boston":667137}
+
+city_population["New York City"]
+
+city_population["Toronto"]
+
+city_population["Boston"]
+
+en_de = {"red" : "rot", "green" : "grün", "blue" : "blau", "yellow":"gelb"}
+print(en_de)
+print(en_de["red"])
+de_fr = {"rot" : "rouge", "grün" : "vert", "blau" : "bleu", "gelb":"jaune"}
+print("The French word for red is: " + de_fr[en_de["red"]])
+

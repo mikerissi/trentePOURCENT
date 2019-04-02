@@ -1,0 +1,44 @@
+lst1 = ['a','b',['ab','ba']]
+lst2 = lst1[:]
+lst2[0] = 'c'
+print(lst1)
+
+print(lst2)
+
+lst2[2][1] = 'd'
+print(lst1)
+
+print(lst2)
+
+from copy import deepcopy
+ 
+lst1 = ['a','b',['ab','ba']]
+ 
+lst2 = deepcopy(lst1)
+ 
+lst1
+
+lst2
+
+id(lst1)
+
+id(lst2)
+
+id(lst1[0])
+
+id(lst2[0])
+
+id(lst2[2])
+
+id(lst1[2])
+
+lst2[2][1] = "d"
+lst2[0] = "c"
+print(lst1)
+
+print(lst2)
+
+ 
+
+ 
+

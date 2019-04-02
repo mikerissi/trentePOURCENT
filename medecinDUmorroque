@@ -1,0 +1,20 @@
+colours1 = ["red", "blue"]
+colours2 = colours1
+print(id(colours1),id(colours2))
+
+colours2[1] = "green"
+print(id(colours1),id(colours2))
+14603760 14603760
+print(colours1)
+
+print(colours2)
+
+list1 = ['a','b','c','d']
+list2 = list1[:]
+list2[1] = 'x'
+print(list2)
+
+print(list1)
+
+lst1 = ['a','b',['ab','ba']]
+lst2 = lst1[:]

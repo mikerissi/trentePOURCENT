@@ -1,0 +1,31 @@
+dishes = ["pizza", "sauerkraut", "paella", "hamburger"]
+countries = ["Italy", "Germany", "Spain", "USA"]
+
+country_specialities_iterator = zip(countries, dishes)
+country_specialities_iterator
+
+country_specialities = list(country_specialities_iterator)
+print(country_specialities)
+
+country_specialities_dict = dict(country_specialities)
+print(country_specialities_dict)
+
+##3Yet, this is very inefficient, because we created a list of 2-tuples to turn this list into a dict. This can be done directly by applying dict to zip:
+>>> dishes = ["pizza", "sauerkraut", "paella", "hamburger"]
+>>> countries = ["Italy", "Germany", "Spain", "USA"]
+>>> dict(zip(countries, dishes))
+{'USA': 'hamburger', 'Germany': 'sauerkraut', 'Spain': 'paella', 'Italy': 'pizza'}
+>>> 
+
+
+There is still one question concerning the function zip(). What happens, if one of the two argument lists contains more elements than the other one? 
+
+It's easy to answer: The superfluous elements, which cannot be paired, will be ignored:
+>>> dishes = ["pizza", "sauerkraut", "paella", "hamburger"]
+>>> countries = ["Italy", "Germany", "Spain", "USA"," Switzerland"]
+>>> country_specialities = list(zip(countries, dishes))
+>>> country_specialities_dict = dict(country_specialities)
+>>> print(country_specialities_dict)
+{'Germany': 'sauerkraut', 'Italy': 'pizza', 'USA': 'hamburger', 'Spain': 'paella'}
+>>> 
+So in this course, we will not answer the burning question, what the national dish of Switzerland is. 

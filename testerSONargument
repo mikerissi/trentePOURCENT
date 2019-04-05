@@ -1,0 +1,26 @@
+x = {"a","b","c","d","e"}
+y = {"c","d","e","f","g"}
+x.union(y)
+
+x = {"a","b","c","d","e"}
+y = {"c","d","e","f","g"}
+x.intersection(y)
+
+x = {"a","b","c"}
+y = {"c","d","e"}
+x.isdisjoint(y)
+
+x = {"a","b","c","d","e"}
+y = {"c","d"}
+x.issubset(y)
+
+y.issubset(x)
+
+x < y
+
+y < x # y is a proper subset of x
+
+x < x # a set can never be a proper subset of oneself.
+
+x <= x 
+True
